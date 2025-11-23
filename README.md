@@ -11,7 +11,7 @@ It includes **user authentication, farm registration, animal management, and das
 - React Router DOM
 - ### **Backend**
 - Node.js / Express  
-- PostgreSQL (Render Cloud DB)  
+- PostgreSQL (sequelize)  
 - Sequelize ORM  
 - JWT Authentication  
 - Swagger Documentation
