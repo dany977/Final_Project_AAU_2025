@@ -1,5 +1,5 @@
-import models from "./models/index.js";
-const { sequelize } = models;
+
+
 
 // src/server.js
 import express from "express";
@@ -17,7 +17,7 @@ import { sequelize } from "./models/index.js";
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173",
+ origin: "https://frontendfarm.netlify.app",
   credentials: true,
 }));
 

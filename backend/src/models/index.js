@@ -2,7 +2,6 @@
 import { Sequelize } from "sequelize";
 import dotenv from "dotenv";
 dotenv.config();
-
 let sequelize;
 
 // If DATABASE_URL exists (Render)
@@ -32,6 +31,7 @@ if (process.env.DATABASE_URL) {
   );
 }
 
+
 import UserModel from "./User.js";
 import FarmModel from "./Farm.js";
 import AnimalModel from "./Animal.js";
@@ -49,5 +49,4 @@ Animal.belongsTo(User, { foreignKey: "userId" });
 Farm.hasMany(Animal, { foreignKey: "farmId", onDelete: "CASCADE" });
 Animal.belongsTo(Farm, { foreignKey: "farmId" });
 export { sequelize };
-
 export default { sequelize, User, Farm, Animal };
