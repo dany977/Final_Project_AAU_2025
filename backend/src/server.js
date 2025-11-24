@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
-
-
->>>>>>> f7cc440 (your commit message)
+import models from "./models/index.js";
+const { sequelize } = models;
 
 // src/server.js
 import express from "express";
